@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+				
+		// Configurações Gerais do Editor 
+		"workbench.iconTheme": "material-icon-theme",
+    	"editor.suggestSelection": "first",
+    	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    	"workbench.colorTheme": "Omni",
+    	"workbench.startupEditor": "newUntitledFile",
+
+		// Configurações Github
+		"git.enabled": false,
+		"git.autofetch": false,
+
+		// Configurações da fonte JetBrains Mono
+		"editor.fontFamily": "JetBrains Mono",
+		"editor.fontLigatures": true,
+		"explorer.compactFolders": false,
+		"editor.renderLineHighlight": "gutter",
+		"workbench.editor.labelFormat": "short",
+		"extensions.ignoreRecommendations": true,
+		
+		// Configurações Javascript 
+		"javascript.updateImportsOnFileMove.enabled": "always",
+		"typescript.updateImportsOnFileMove.enabled": "never",
+		
+		"breadcrumbs.enabled": true,
+		"editor.parameterHints.enabled": false,
+		"editor.formatOnSave": true,
+		"explorer.confirmDragAndDrop": false,
+		"explorer.confirmDelete": false,
+		
+		"emmet.syntaxProfiles": { "javascript": "jsx" },
+		"emmet.includeLanguages": { "javascript": "javascriptreact" },
+		
+		"javascript.suggest.autoImports": true,
+		"typescript.suggest.autoImports": true,
+	}
+}
