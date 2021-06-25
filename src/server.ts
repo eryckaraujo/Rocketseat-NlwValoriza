@@ -1,6 +1,8 @@
 // Imports necessários ao projeto
-import "reflect-metadata"
+import "reflect-metadata";
 import express from "express";
+import { router } from "./routes";
+
 import "./database";
 
 // Inicializando o servidor da aplicação
@@ -13,17 +15,9 @@ const app = express();
  * DELETE => Remover um dado
  * PATCH  => Alterar uma informação específica
  */
+app.use(express.json());
 
-app.get("/test", (request, response) => {
-    // Request => Entrando
-    // Response => Saindo
-    return response.send("Olá NLW");
-  });
-  
-
-app.post("/test-post", (request, response) => {
-    return response.send("Olá NLW método POST");
-  });
+app.use(router);
 
 // Determinando a porta do servidor 
 app.listen(3000, () => console.log("Server Running SHOW"));

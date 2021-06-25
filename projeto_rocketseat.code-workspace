@@ -1,44 +1,87 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-				
-		// Configurações Gerais do Editor 
-		"workbench.iconTheme": "material-icon-theme",
-    	"editor.suggestSelection": "first",
-    	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    	"workbench.colorTheme": "Omni",
-    	"workbench.startupEditor": "newUntitledFile",
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    // Configurações Gerais do Editor
+    "workbench.iconTheme": "material-icon-theme",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Omni",
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 20,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
 
-		// Configurações Github
-		"git.enabled": false,
-		"git.autofetch": false,
+    "material-icon-theme.files.associations": {
+      "ormconfig.json": "database",
+      "tsconfig.json": "tune",
+      "*.proto": "3d",
+      "*.webpack.js": "webpack"
+    },
 
-		// Configurações da fonte JetBrains Mono
-		"editor.fontFamily": "JetBrains Mono",
-		"editor.fontLigatures": true,
-		"explorer.compactFolders": false,
-		"editor.renderLineHighlight": "gutter",
-		"workbench.editor.labelFormat": "short",
-		"extensions.ignoreRecommendations": true,
-		
-		// Configurações Javascript 
-		"javascript.updateImportsOnFileMove.enabled": "always",
-		"typescript.updateImportsOnFileMove.enabled": "never",
-		
-		"breadcrumbs.enabled": true,
-		"editor.parameterHints.enabled": false,
-		"editor.formatOnSave": true,
-		"explorer.confirmDragAndDrop": false,
-		"explorer.confirmDelete": false,
-		
-		"emmet.syntaxProfiles": { "javascript": "jsx" },
-		"emmet.includeLanguages": { "javascript": "javascriptreact" },
-		
-		"javascript.suggest.autoImports": true,
-		"typescript.suggest.autoImports": true,
-	}
+    // Configurações da fonte JetBrains Mono
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "explorer.compactFolders": false,
+    "editor.renderLineHighlight": "gutter",
+    "workbench.editor.labelFormat": "short",
+    "extensions.ignoreRecommendations": true,
+    "breadcrumbs.enabled": true,
+    "editor.parameterHints.enabled": false,
+    "editor.formatOnSave": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "workbench.productIconTheme": "fluent-icons",
+    "terminal.integrated.showExitAlert": false,
+
+    // Configurações Javascript
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "files.associations": {
+      ".sequelizerc": "javascript",
+      ".stylelintrc": "json",
+      ".prettierrc": "json",
+      "*.tsx": "typescriptreact"
+    },
+
+    "typescript.tsserver.log": "verbose",
+    "material-icon-theme.activeIconPack": "nest",
+    "material-icon-theme.folders.associations": {
+      "infra": "app",
+      "entities": "class",
+      "domain": "class",
+      "schemas": "class",
+      "typeorm": "database",
+      "repositories": "mappings",
+      "http": "container",
+      "migrations": "tools",
+      "modules": "components",
+      "implementations": "core",
+      "dtos": "typescript",
+      "fakes": "mock",
+      "websockets": "pipe",
+      "protos": "pipe",
+      "grpc": "pipe",
+      "providers": "include",
+      "subscribers": "messages",
+      "useCases": "controller",
+      "kafka": "scripts",
+      "mappers": "meta",
+      "_shared": "shared",
+      "eslint-config": "tools",
+      "kube": "kubernetes"
+    },
+    "emmet.syntaxProfiles": { "javascript": "jsx" },
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true
+  }
 }
