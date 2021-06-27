@@ -16,11 +16,9 @@ class CreateComplimentService {
     user_receiver,
     message,
   }: IComplimentRequest) {
-
     const complimentsRepositories = getCustomRepository(
       ComplimentsRepositories
     );
-
     const usersRepositories = getCustomRepository(UsersRepositories);
 
     if (user_sender === user_receiver) {
